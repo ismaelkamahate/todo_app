@@ -15,12 +15,24 @@
  */
 body{
     background-color:#acc0c4;
-    color:#00d6ff;
 }
 
 h1{
-    color:blue;
+    color:DodgerBlue
+;
     
 }
-li{list-style:none;}
-.name{color:black;}
+li{
+    list-style:none;
+    
+}
+.name{
+    color:#fff896;
+    
+}
+h3{
+    color:#40fc3a;
+}
+.pen{
+    color:green;
+}

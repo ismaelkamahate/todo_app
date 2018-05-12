@@ -54,5 +54,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   get 'todo/index', to: 'todo#index'
-  get 'todo/show/:id', to: 'todo#show#1'
+  get 'todo/show/:id', to: 'todo#show'
+  get 'todo/show2/:id', to: 'todo#show2'
+  get 'todo/show3/:id', to: 'todo#show3'
 end
