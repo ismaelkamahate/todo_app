@@ -58,4 +58,5 @@ Rails.application.routes.draw do
   get 'todo/show2/:id', to: 'todo#show2'
   get 'todo/show3/:id', to: 'todo#show3'
   get 'todo/new', to:'todo#new'
+  get 'todo:create', to: 'todo#create'
 end

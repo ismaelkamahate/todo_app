@@ -3,7 +3,7 @@ class TodoController < ApplicationController
         @y = 500000
         todo_id =params[:id]
     if todo_id == '1'
-        @todo_description='Walk dog'
+        @todo_description=@todo.description
     elsif todo_id == '2'
        @todo_description='clean room'
     else
@@ -12,15 +12,12 @@ class TodoController < ApplicationController
  end
     
     def show
+        @todo =Todo.find_by_id(params[:id])
+        @todo_description=@todo.description
+        @todo_pomodoro_estimate=@todo.pomdoro_estimate
       @x = 16
         todo_id =params[:id]
-    if todo_id == '1'
-        @todo_description='Walk dog'
-    elsif todo_id == '2'
-       @todo_description='clean room'
-    else
-       @todo_description='clean bathroom'
-    end
+ 
     end
     def new 
     end
